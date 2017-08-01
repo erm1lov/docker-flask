@@ -12,5 +12,5 @@ class TestUserService(BaseTestCase):
         response = self.client.get('/ping')
         data = json.loads(response.data.decode())
         self.assertEqual(response.status_code, 200)
-        self.assertIn('pong!', data['message'])
+        self.assertIn('ping blueprint pong', data['message'])
         self.assertIn('success', data['status'])

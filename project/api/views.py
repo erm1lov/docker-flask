@@ -13,7 +13,7 @@ users_blueprint = Blueprint('users', __name__)
 def ping():
     return jsonify({
         'status': 'success',
-        'message': 'ping blueprint pong'
+        'message': 'ping FOKIN pong!'
     })
 
 
